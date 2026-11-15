@@ -141,6 +141,7 @@
           <div class="example" id="tExample"></div>
         </div>
         <input type="text" id="tInput" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Antwort eingeben …">
+        <div class="muted" style="margin-top:6px">Rechtschreibung und Groß-/Kleinschreibung zählen.</div>
         <div id="tFeedback" class="feedback hidden"></div>
         <div class="row" style="margin-top:12px">
           <button class="btn" id="tCheck">Prüfen</button>
@@ -249,33 +250,62 @@ function segment(id, set) {
 }
 
 // ---------- Antwort prüfen ----------
+// Strenge Prüfung: Rechtschreibung und Groß-/Kleinschreibung zählen.
+// Ignoriert werden nur Leerzeichen am Rand/doppelt, Satzzeichen am Ende,
+// Auslassungspunkte und unterschiedliche Apostroph-Zeichen.
 function norm(s) {
-  return s.toLowerCase()
-    .replace(/[’`´]/g, "'").replace(/…|\.\.\./g, " ")
-    .replace(/[.!?¿,:"„“]/g, " ").replace(/\s+/g, " ").trim();
+  return s.replace(/[’`´]/g, "'").replace(/…|\.\.\./g, " ")
+    .replace(/[„“"]/g, "").replace(/\s+/g, " ").trim()
+    .replace(/[\s.!?]+$/, "").trim();
+}
+// An Kommas, Semikolons und Schrägstrichen trennen – aber nicht innerhalb von Klammern
+function splitTop(text) {
+  const parts = []; let depth = 0, cur = "";
+  for (const ch of text) {
+    if (ch === "(") depth++;
+    if (ch === ")") depth = Math.max(0, depth - 1);
+    if (depth === 0 && /[;,\/]/.test(ch)) { parts.push(cur); cur = ""; }
+    else cur += ch;
+  }
+  parts.push(cur);
+  return parts;
 }
 function variants(text) {
-  // Alternativen trennen und Klammern einmal weglassen, einmal mitnehmen
   const out = new Set();
-  text.split(/[;\/,]/).forEach(part => {
-    part = part.replace(/\(=.*?\)/g, "").replace(/\bpl\b.*$/, "");
-    const a = norm(part.replace(/\(.*?\)/g, ""));
-    const b = norm(part.replace(/-\)/g, "").replace(/[()]/g, ""));
-    [a, b].forEach(x => { if (x) out.add(x); });
-  });
-  out.add(norm(text.replace(/\(.*?\)/g, "")));
-  out.add(norm(text.replace(/[()]/g, "")));
-  out.delete("");
+  const add = s => { s = norm(s); if (s) out.add(s); };
+  // "Freund/in", "mein/e", "Jugendliche/r": beide Formen erlauben, "/in" ist keine Alternative
+  text = text.replace(/([A-Za-zÄÖÜäöüß]+)\/(in|e|r)\b/g, "$1\u0001$2");
+  for (let part of splitTop(text)) {
+    const eq = part.match(/\(=\s*(.*?)\)/);
+    if (eq) add(eq[1]);                                  // "I'm (= I am)" → auch "I am"
+    part = part.replace(/\(=.*?\)/g, "").replace(/\(pl\)/g, "").replace(/\bpl\b.*$/, "");
+    for (const p of [part.replace(/\u0001\w+/g, ""), part.replace(/\u0001/g, "")]) {
+      add(p.replace(/\(.*?\)/g, ""));                    // "(Schul-)Heft" → "Heft"
+      add(p.replace(/\(([^()]*?)-\)\s*(\S)/g,            // "(Schul-)Heft" → "Schulheft"
+        (m, a, b) => a + b.toLowerCase()).replace(/[()]/g, "")); // "Mathe(matik)" → "Mathematik"
+    }
+  }
   return out;
 }
-function isCorrect(v, input) {
+function editDistance(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      d[i][j] = Math.min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + (a[i-1] === b[j-1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+// Ergebnis: "ok" | "case" (nur Groß/klein falsch) | "spelling" (knapp daneben) | "wrong"
+function checkAnswer(v, input) {
   const target = dir === "en" ? v.german : v.english;
   const ans = norm(input);
-  if (!ans) return false;
-  const vs = variants(target);
-  if (vs.has(ans)) return true;
-  if (dir === "de" && vs.has(ans.replace(/^to /, ""))) return true;
-  return false;
+  if (!ans) return "wrong";
+  const vs = [...variants(target)];
+  const cands = dir === "de" ? [ans, ans.replace(/^to /, "")] : [ans];
+  if (cands.some(c => vs.includes(c))) return "ok";
+  if (cands.some(c => vs.some(x => x.toLowerCase() === c.toLowerCase()))) return "case";
+  if (cands.some(c => vs.some(x => editDistance(x.toLowerCase(), c.toLowerCase()) <= (x.length > 6 ? 2 : 1)))) return "spelling";
+  return "wrong";
 }
 
 // ---------- Ablauf ----------
@@ -335,20 +365,27 @@ function check() {
   if (answered) return;
   answered = true;
   const v = queue[idx];
-  const ok = isCorrect(v, $("tInput").value);
+  const res = checkAnswer(v, $("tInput").value);
+  const ok = res === "ok";
   record(ok);
   const fb = $("tFeedback");
   const sol = dir === "en" ? v.german : v.english;
   fb.className = "feedback " + (ok ? "ok" : "bad");
   fb.innerHTML = "";
-  fb.append(document.createTextNode(ok ? "Richtig!" : "Leider falsch."));
+  const msg = {
+    ok: "Richtig!",
+    case: "Fast! Achte auf die Groß- und Kleinschreibung.",
+    spelling: "Fast! Achte auf die Rechtschreibung.",
+    wrong: "Leider falsch."
+  }[res];
+  fb.append(document.createTextNode(msg));
   const s = document.createElement("div"); s.className = "sol";
   s.textContent = "Lösung: " + sol + (v.example ? "  —  " + v.example : "");
   fb.append(s);
   $("tInput").disabled = true;
   $("tCheck").classList.add("hidden");
   $("tNext").classList.remove("hidden");
-  $("tOverride").classList.toggle("hidden", ok);
+  $("tOverride").classList.toggle("hidden", res !== "wrong");
   $("tNext").focus();
 }
 function override() {
