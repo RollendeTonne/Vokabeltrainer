@@ -1,0 +1,2441 @@
+[
+  {
+    "id": 1,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Let's go!",
+    "german": "Auf geht's! / Dann mal los!",
+    "example": ""
+  },
+  {
+    "id": 2,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "let's (= let us)",
+    "german": "lass uns / lasst uns",
+    "example": ""
+  },
+  {
+    "id": 3,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "(to) go",
+    "german": "gehen, fahren",
+    "example": ""
+  },
+  {
+    "id": 4,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "(to) meet",
+    "german": "kennenlernen; (sich) treffen",
+    "example": ""
+  },
+  {
+    "id": 5,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "kid",
+    "german": "Kind, Jugendliche/r",
+    "example": "one kid – two kids"
+  },
+  {
+    "id": 6,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Hi.",
+    "german": "Hallo.",
+    "example": ""
+  },
+  {
+    "id": 7,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "I'm (= I am)",
+    "german": "ich bin",
+    "example": ""
+  },
+  {
+    "id": 8,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "from Plymouth",
+    "german": "aus Plymouth",
+    "example": ""
+  },
+  {
+    "id": 9,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "one",
+    "german": "eins (1)",
+    "example": ""
+  },
+  {
+    "id": 10,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "two",
+    "german": "zwei (2)",
+    "example": ""
+  },
+  {
+    "id": 11,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "three",
+    "german": "drei (3)",
+    "example": ""
+  },
+  {
+    "id": 12,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "four",
+    "german": "vier (4)",
+    "example": ""
+  },
+  {
+    "id": 13,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "five",
+    "german": "fünf (5)",
+    "example": ""
+  },
+  {
+    "id": 14,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "six",
+    "german": "sechs (6)",
+    "example": ""
+  },
+  {
+    "id": 15,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "seven",
+    "german": "sieben (7)",
+    "example": ""
+  },
+  {
+    "id": 16,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "eight",
+    "german": "acht (8)",
+    "example": ""
+  },
+  {
+    "id": 17,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "nine",
+    "german": "neun (9)",
+    "example": ""
+  },
+  {
+    "id": 18,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "ten",
+    "german": "zehn (10)",
+    "example": ""
+  },
+  {
+    "id": 19,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "eleven",
+    "german": "elf (11)",
+    "example": ""
+  },
+  {
+    "id": 20,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "twelve",
+    "german": "zwölf (12)",
+    "example": ""
+  },
+  {
+    "id": 21,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "thirteen",
+    "german": "dreizehn (13)",
+    "example": ""
+  },
+  {
+    "id": 22,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "fourteen",
+    "german": "vierzehn (14)",
+    "example": ""
+  },
+  {
+    "id": 23,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "fifteen",
+    "german": "fünfzehn (15)",
+    "example": ""
+  },
+  {
+    "id": 24,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "in England",
+    "german": "in England",
+    "example": ""
+  },
+  {
+    "id": 25,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "my",
+    "german": "mein/e",
+    "example": ""
+  },
+  {
+    "id": 26,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "dad",
+    "german": "Papa, Vati",
+    "example": ""
+  },
+  {
+    "id": 27,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "my dad is ...",
+    "german": "mein Papa ist ...",
+    "example": ""
+  },
+  {
+    "id": 28,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "the USA",
+    "german": "die USA (= die Vereinigten Staaten von Amerika)",
+    "example": ""
+  },
+  {
+    "id": 29,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Hello.",
+    "german": "Hallo.",
+    "example": ""
+  },
+  {
+    "id": 30,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "name",
+    "german": "Name",
+    "example": ""
+  },
+  {
+    "id": 31,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "mum",
+    "german": "Mama, Mutti",
+    "example": ""
+  },
+  {
+    "id": 32,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "and",
+    "german": "und",
+    "example": ""
+  },
+  {
+    "id": 33,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "my mum and dad are ...",
+    "german": "meine Mama und mein Papa sind ...",
+    "example": ""
+  },
+  {
+    "id": 34,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "China",
+    "german": "China",
+    "example": ""
+  },
+  {
+    "id": 35,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "What's your name?",
+    "german": "Wie heißt du? (wörtlich: Was ist dein Name?)",
+    "example": ""
+  },
+  {
+    "id": 36,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "what?",
+    "german": "was?",
+    "example": ""
+  },
+  {
+    "id": 37,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "your",
+    "german": "dein/e; euer/eure; Ihr/e",
+    "example": ""
+  },
+  {
+    "id": 38,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Poland",
+    "german": "Polen",
+    "example": ""
+  },
+  {
+    "id": 39,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "How old are you?",
+    "german": "Wie alt bist du?",
+    "example": ""
+  },
+  {
+    "id": 40,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "you're (= you are)",
+    "german": "du bist; ihr seid; Sie sind",
+    "example": ""
+  },
+  {
+    "id": 41,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Where are you from?",
+    "german": "Wo kommst du her?",
+    "example": ""
+  },
+  {
+    "id": 42,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "where?",
+    "german": "wo? / wohin?",
+    "example": ""
+  },
+  {
+    "id": 43,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Nice to meet you.",
+    "german": "Freut mich, dich/euch/Sie kennenzulernen.",
+    "example": ""
+  },
+  {
+    "id": 44,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "nice",
+    "german": "nett, schön",
+    "example": ""
+  },
+  {
+    "id": 45,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Germany",
+    "german": "Deutschland",
+    "example": "in England, in Germany"
+  },
+  {
+    "id": 46,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 8,
+    "english": "Turkey",
+    "german": "(die) Türkei",
+    "example": ""
+  },
+  {
+    "id": 47,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "crab",
+    "german": "Krebs",
+    "example": ""
+  },
+  {
+    "id": 48,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "town",
+    "german": "Stadt",
+    "example": "in town = in der Stadt"
+  },
+  {
+    "id": 49,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "great",
+    "german": "toll, großartig",
+    "example": ""
+  },
+  {
+    "id": 50,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "place",
+    "german": "Ort, Platz",
+    "example": ""
+  },
+  {
+    "id": 51,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "swimming pool",
+    "german": "Schwimmbad",
+    "example": ""
+  },
+  {
+    "id": 52,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "aquarium",
+    "german": "Aquarium",
+    "example": ""
+  },
+  {
+    "id": 53,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "sea",
+    "german": "Meer, (die) See",
+    "example": ""
+  },
+  {
+    "id": 54,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "now",
+    "german": "nun, jetzt",
+    "example": ""
+  },
+  {
+    "id": 55,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "favourite place",
+    "german": "Lieblingsort",
+    "example": "Plymouth is my favourite town in England."
+  },
+  {
+    "id": 56,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "it's (= it is)",
+    "german": "es ist (bei Dingen und Tieren auch: er ist, sie ist)",
+    "example": ""
+  },
+  {
+    "id": 57,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "very",
+    "german": "sehr",
+    "example": ""
+  },
+  {
+    "id": 58,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 9,
+    "english": "popular",
+    "german": "beliebt, populär",
+    "example": "The aquarium is very popular."
+  },
+  {
+    "id": 59,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "classroom",
+    "german": "Klassenraum",
+    "example": ""
+  },
+  {
+    "id": 60,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "thing",
+    "german": "Ding, Sache",
+    "example": ""
+  },
+  {
+    "id": 61,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "I can see ...",
+    "german": "ich kann ... sehen",
+    "example": "I can see Cyril. And you?"
+  },
+  {
+    "id": 62,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "can",
+    "german": "können",
+    "example": ""
+  },
+  {
+    "id": 63,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "window",
+    "german": "Fenster",
+    "example": ""
+  },
+  {
+    "id": 64,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "girl",
+    "german": "Mädchen",
+    "example": ""
+  },
+  {
+    "id": 65,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "boy",
+    "german": "Junge, Bub",
+    "example": ""
+  },
+  {
+    "id": 66,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "teacher",
+    "german": "Lehrer/in",
+    "example": ""
+  },
+  {
+    "id": 67,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "desk",
+    "german": "Schreibtisch, Schülertisch",
+    "example": ""
+  },
+  {
+    "id": 68,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "chair",
+    "german": "Stuhl",
+    "example": ""
+  },
+  {
+    "id": 69,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "board",
+    "german": "Tafel",
+    "example": ""
+  },
+  {
+    "id": 70,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "door",
+    "german": "Tür",
+    "example": ""
+  },
+  {
+    "id": 71,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "clock",
+    "german": "(Wand-, Stand-, Turm-)Uhr",
+    "example": ""
+  },
+  {
+    "id": 72,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "different",
+    "german": "verschieden; anders",
+    "example": "six different colours"
+  },
+  {
+    "id": 73,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "colour",
+    "german": "Farbe",
+    "example": "What colour is ...? – Welche Farbe hat ...?"
+  },
+  {
+    "id": 74,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "red",
+    "german": "rot",
+    "example": ""
+  },
+  {
+    "id": 75,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "yellow",
+    "german": "gelb",
+    "example": ""
+  },
+  {
+    "id": 76,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "blue",
+    "german": "blau",
+    "example": ""
+  },
+  {
+    "id": 77,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "green",
+    "german": "grün",
+    "example": ""
+  },
+  {
+    "id": 78,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "brown",
+    "german": "braun",
+    "example": ""
+  },
+  {
+    "id": 79,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "orange",
+    "german": "orange",
+    "example": ""
+  },
+  {
+    "id": 80,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "grey",
+    "german": "grau",
+    "example": ""
+  },
+  {
+    "id": 81,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "pink",
+    "german": "pink, rosa",
+    "example": ""
+  },
+  {
+    "id": 82,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "purple",
+    "german": "violett, lila",
+    "example": ""
+  },
+  {
+    "id": 83,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "white",
+    "german": "weiß",
+    "example": ""
+  },
+  {
+    "id": 84,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "black",
+    "german": "schwarz",
+    "example": ""
+  },
+  {
+    "id": 85,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "in my picture",
+    "german": "auf meinem Bild",
+    "example": ""
+  },
+  {
+    "id": 86,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "a door",
+    "german": "eine Tür",
+    "example": ""
+  },
+  {
+    "id": 87,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "an orange door",
+    "german": "eine orangefarbene Tür",
+    "example": ""
+  },
+  {
+    "id": 88,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "that's (= that is)",
+    "german": "das (da) ist",
+    "example": "Is that your chair? – Yes, that's my chair."
+  },
+  {
+    "id": 89,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 10,
+    "english": "the same",
+    "german": "gleich; derselbe/dieselbe/dasselbe; dieselben",
+    "example": "Luca and Jack are in the same classroom."
+  },
+  {
+    "id": 90,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "schoolbag",
+    "german": "Schultasche",
+    "example": "bag – Tasche"
+  },
+  {
+    "id": 91,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "book",
+    "german": "Buch",
+    "example": ""
+  },
+  {
+    "id": 92,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "exercise book",
+    "german": "(Schul-)Heft",
+    "example": ""
+  },
+  {
+    "id": 93,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "pen",
+    "german": "Kugelschreiber, Stift; Füller",
+    "example": ""
+  },
+  {
+    "id": 94,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "pencil",
+    "german": "Bleistift",
+    "example": ""
+  },
+  {
+    "id": 95,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "pencil case",
+    "german": "Federmäppchen",
+    "example": ""
+  },
+  {
+    "id": 96,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "(pencil) sharpener",
+    "german": "(Bleistift-)Spitzer",
+    "example": ""
+  },
+  {
+    "id": 97,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "rubber",
+    "german": "Radiergummi",
+    "example": ""
+  },
+  {
+    "id": 98,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "ruler",
+    "german": "Lineal",
+    "example": ""
+  },
+  {
+    "id": 99,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "(to) borrow",
+    "german": "(aus)leihen, sich borgen",
+    "example": ""
+  },
+  {
+    "id": 100,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "yes",
+    "german": "ja",
+    "example": ""
+  },
+  {
+    "id": 101,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "Here you are.",
+    "german": "Bitte schön. / Hier, bitte.",
+    "example": "Can I borrow your pencil? – Yes, here you are."
+  },
+  {
+    "id": 102,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "no",
+    "german": "nein",
+    "example": "no ◄► yes"
+  },
+  {
+    "id": 103,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "Sorry. / I'm sorry.",
+    "german": "Tut mir leid. / Entschuldigung.",
+    "example": "No, sorry. = Nein, tut mir leid."
+  },
+  {
+    "id": 104,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "thank you / thanks",
+    "german": "danke (schön)",
+    "example": ""
+  },
+  {
+    "id": 105,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "I'm late.",
+    "german": "Ich habe mich verspätet.",
+    "example": "late = spät"
+  },
+  {
+    "id": 106,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "in English",
+    "german": "auf Englisch",
+    "example": "What's 'Tasche' in English?"
+  },
+  {
+    "id": 107,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "English",
+    "german": "Englisch; englisch",
+    "example": ""
+  },
+  {
+    "id": 108,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "to",
+    "german": "zu, nach",
+    "example": ""
+  },
+  {
+    "id": 109,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "toilet",
+    "german": "Toilette",
+    "example": ""
+  },
+  {
+    "id": 110,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "I don't understand ...",
+    "german": "ich verstehe ... nicht",
+    "example": "I'm sorry, I don't understand you."
+  },
+  {
+    "id": 111,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "(to) understand",
+    "german": "verstehen",
+    "example": ""
+  },
+  {
+    "id": 112,
+    "unit": "Let's go!",
+    "section": "Let's go!",
+    "page": 11,
+    "english": "activity",
+    "german": "Aktivität, Tätigkeit",
+    "example": ""
+  },
+  {
+    "id": 113,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "our",
+    "german": "unser/e",
+    "example": "our poster, our class"
+  },
+  {
+    "id": 114,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "first",
+    "german": "erste(r, s)",
+    "example": ""
+  },
+  {
+    "id": 115,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "day",
+    "german": "Tag",
+    "example": ""
+  },
+  {
+    "id": 116,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "at",
+    "german": "an; in; bei; auf",
+    "example": ""
+  },
+  {
+    "id": 117,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "school",
+    "german": "Schule",
+    "example": "they're at school – sie sind in der Schule"
+  },
+  {
+    "id": 118,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "the name of the school",
+    "german": "der Name der Schule",
+    "example": ""
+  },
+  {
+    "id": 119,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "uniform",
+    "german": "Uniform",
+    "example": "a uniform"
+  },
+  {
+    "id": 120,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "who",
+    "german": "wer",
+    "example": ""
+  },
+  {
+    "id": 121,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "new",
+    "german": "neu",
+    "example": "new ◄► old"
+  },
+  {
+    "id": 122,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "student",
+    "german": "Schüler/in; Student/in",
+    "example": ""
+  },
+  {
+    "id": 123,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "friend",
+    "german": "Freund/in",
+    "example": ""
+  },
+  {
+    "id": 124,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "big",
+    "german": "groß",
+    "example": ""
+  },
+  {
+    "id": 125,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "small",
+    "german": "klein",
+    "example": "small ◄► big"
+  },
+  {
+    "id": 126,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "I'm fine. / Li is fine.",
+    "german": "Mir/Li geht es gut.",
+    "example": ""
+  },
+  {
+    "id": 127,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "fine",
+    "german": "gut, in Ordnung; schön",
+    "example": "a fine day – ein schöner Tag"
+  },
+  {
+    "id": 128,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "OK",
+    "german": "okay, gut, in Ordnung",
+    "example": ""
+  },
+  {
+    "id": 129,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "boring",
+    "german": "langweilig",
+    "example": ""
+  },
+  {
+    "id": 130,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "hair",
+    "german": "Haar, Haare",
+    "example": "Your hair is black. – Deine Haare sind schwarz."
+  },
+  {
+    "id": 131,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 12,
+    "english": "horrible",
+    "german": "schrecklich",
+    "example": ""
+  },
+  {
+    "id": 132,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 13,
+    "english": "Welcome to ...",
+    "german": "Willkommen in/an ...",
+    "example": ""
+  },
+  {
+    "id": 133,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 13,
+    "english": "community college",
+    "german": "(BE) weiterführende Schule mit gymnasialer Oberstufe",
+    "example": ""
+  },
+  {
+    "id": 134,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 13,
+    "english": "How are you?",
+    "german": "Wie geht's? / Wie geht es dir/euch/Ihnen?",
+    "example": ""
+  },
+  {
+    "id": 135,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 13,
+    "english": "What about you?",
+    "german": "Und du? / Was ist mit dir?",
+    "example": "I like red. What about you?"
+  },
+  {
+    "id": 136,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 13,
+    "english": "(to) like",
+    "german": "mögen",
+    "example": ""
+  },
+  {
+    "id": 137,
+    "unit": "Unit 1",
+    "section": "Unit 1",
+    "page": 13,
+    "english": "word",
+    "german": "Wort",
+    "example": ""
+  },
+  {
+    "id": 138,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Mr Taylor",
+    "german": "Herr Taylor",
+    "example": ""
+  },
+  {
+    "id": 139,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Mr Taylor's favourite subject",
+    "german": "Herrn Taylors Lieblingsfach",
+    "example": ""
+  },
+  {
+    "id": 140,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "subject",
+    "german": "(Schul-)Fach",
+    "example": ""
+  },
+  {
+    "id": 141,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "before",
+    "german": "bevor; vor (zeitlich)",
+    "example": "before the lesson – vor der Stunde"
+  },
+  {
+    "id": 142,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "(to) read",
+    "german": "lesen",
+    "example": ""
+  },
+  {
+    "id": 143,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Monday",
+    "german": "Montag",
+    "example": ""
+  },
+  {
+    "id": 144,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Tuesday",
+    "german": "Dienstag",
+    "example": ""
+  },
+  {
+    "id": 145,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Wednesday",
+    "german": "Mittwoch",
+    "example": ""
+  },
+  {
+    "id": 146,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Thursday",
+    "german": "Donnerstag",
+    "example": ""
+  },
+  {
+    "id": 147,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Friday",
+    "german": "Freitag",
+    "example": ""
+  },
+  {
+    "id": 148,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Saturday",
+    "german": "Samstag",
+    "example": ""
+  },
+  {
+    "id": 149,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Sunday",
+    "german": "Sonntag",
+    "example": ""
+  },
+  {
+    "id": 150,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "morning",
+    "german": "Morgen",
+    "example": ""
+  },
+  {
+    "id": 151,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "registration",
+    "german": "Anwesenheitskontrolle und Ankündigung aktueller Ereignisse vor dem Unterricht",
+    "example": ""
+  },
+  {
+    "id": 152,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "for",
+    "german": "für",
+    "example": ""
+  },
+  {
+    "id": 153,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "class",
+    "german": "Klasse; Unterricht; Kurs",
+    "example": "one class – two classes"
+  },
+  {
+    "id": 154,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "she's (= she is)",
+    "german": "sie ist",
+    "example": "She's my sister."
+  },
+  {
+    "id": 155,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "I'm not ...",
+    "german": "ich bin nicht ...; ich bin kein/e ...",
+    "example": "I'm not ten. And I'm not a boy."
+  },
+  {
+    "id": 156,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "he",
+    "german": "er",
+    "example": ""
+  },
+  {
+    "id": 157,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "funny",
+    "german": "witzig, komisch",
+    "example": ""
+  },
+  {
+    "id": 158,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "he/she/it isn't ... (= is not)",
+    "german": "er/sie/es ist nicht ...; er/sie/es ist kein/e ...",
+    "example": ""
+  },
+  {
+    "id": 159,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "strict",
+    "german": "streng",
+    "example": "Mr Taylor isn't very strict."
+  },
+  {
+    "id": 160,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Good morning.",
+    "german": "Guten Morgen.",
+    "example": ""
+  },
+  {
+    "id": 161,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "good",
+    "german": "gut",
+    "example": "a good school"
+  },
+  {
+    "id": 162,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "noisy",
+    "german": "laut, voller Lärm",
+    "example": ""
+  },
+  {
+    "id": 163,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "please",
+    "german": "bitte",
+    "example": "Can I borrow your pen, please?"
+  },
+  {
+    "id": 164,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "(to) be",
+    "german": "sein",
+    "example": ""
+  },
+  {
+    "id": 165,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "quiet",
+    "german": "ruhig, still, leise",
+    "example": "noisy ◄► quiet"
+  },
+  {
+    "id": 166,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "(to) talk (to)",
+    "german": "sprechen, reden (mit)",
+    "example": "Talk to your friends about your favourite subjects."
+  },
+  {
+    "id": 167,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "Don't talk.",
+    "german": "Sprich/Rede nicht.",
+    "example": ""
+  },
+  {
+    "id": 168,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "(to) sit down",
+    "german": "sich (hin)setzen",
+    "example": "Is that my chair? Can I sit down?"
+  },
+  {
+    "id": 169,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "(to) have",
+    "german": "haben",
+    "example": ""
+  },
+  {
+    "id": 170,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "timetable",
+    "german": "Stundenplan",
+    "example": ""
+  },
+  {
+    "id": 171,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "IT (information technology)",
+    "german": "IT (Informationstechnologie)",
+    "example": ""
+  },
+  {
+    "id": 172,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "when",
+    "german": "wann",
+    "example": ""
+  },
+  {
+    "id": 173,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "lesson",
+    "german": "(Unterrichts-)Stunde",
+    "example": ""
+  },
+  {
+    "id": 174,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "today",
+    "german": "heute",
+    "example": ""
+  },
+  {
+    "id": 175,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "maths",
+    "german": "Mathe(matik)",
+    "example": ""
+  },
+  {
+    "id": 176,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "then",
+    "german": "dann, danach",
+    "example": "Now it's registration, then the lessons are maths and geography."
+  },
+  {
+    "id": 177,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "geography",
+    "german": "Geografie, Erdkunde",
+    "example": ""
+  },
+  {
+    "id": 178,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "technology",
+    "german": "Technik(unterricht); Technologie",
+    "example": ""
+  },
+  {
+    "id": 179,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 14,
+    "english": "art",
+    "german": "Kunst",
+    "example": ""
+  },
+  {
+    "id": 180,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "easy",
+    "german": "einfach, leicht",
+    "example": ""
+  },
+  {
+    "id": 181,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "hard",
+    "german": "schwer, schwierig; hart",
+    "example": "hard ◄► easy"
+  },
+  {
+    "id": 182,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "but",
+    "german": "aber",
+    "example": "Luca is ten, but Jack is fourteen."
+  },
+  {
+    "id": 183,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "about the story",
+    "german": "über die Geschichte",
+    "example": ""
+  },
+  {
+    "id": 184,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "he has",
+    "german": "er hat",
+    "example": ""
+  },
+  {
+    "id": 185,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "(to) act",
+    "german": "aufführen, spielen",
+    "example": ""
+  },
+  {
+    "id": 186,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "assembly",
+    "german": "Schulversammlung",
+    "example": ""
+  },
+  {
+    "id": 187,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "science",
+    "german": "Naturwissenschaft",
+    "example": ""
+  },
+  {
+    "id": 188,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "break",
+    "german": "Pause",
+    "example": ""
+  },
+  {
+    "id": 189,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "PE (physical education)",
+    "german": "(Schul-)Sport",
+    "example": ""
+  },
+  {
+    "id": 190,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "lunch",
+    "german": "Mittagessen",
+    "example": ""
+  },
+  {
+    "id": 191,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "French",
+    "german": "Französisch; französisch",
+    "example": ""
+  },
+  {
+    "id": 192,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "history",
+    "german": "Geschichte",
+    "example": ""
+  },
+  {
+    "id": 193,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "music",
+    "german": "Musik",
+    "example": ""
+  },
+  {
+    "id": 194,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "drama",
+    "german": "Schauspiel, darstellende Kunst",
+    "example": ""
+  },
+  {
+    "id": 195,
+    "unit": "Unit 1",
+    "section": "Text 1",
+    "page": 15,
+    "english": "on Wednesday",
+    "german": "am Mittwoch",
+    "example": "What's lesson one on Monday?"
+  },
+  {
+    "id": 196,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "classmate",
+    "german": "Mitschüler/in",
+    "example": ""
+  },
+  {
+    "id": 197,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "principal",
+    "german": "Rektor/in, Schulleiter/in",
+    "example": ""
+  },
+  {
+    "id": 198,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "This is ...",
+    "german": "Dies ist ... / Das ist ...",
+    "example": ""
+  },
+  {
+    "id": 199,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "we're (= we are)",
+    "german": "wir sind",
+    "example": ""
+  },
+  {
+    "id": 200,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "year",
+    "german": "Jahr(gang)",
+    "example": "Cyril the crab is four years old. I'm in year six at Eggy."
+  },
+  {
+    "id": 201,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "sixteen",
+    "german": "sechzehn (16)",
+    "example": ""
+  },
+  {
+    "id": 202,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "seventeen",
+    "german": "siebzehn (17)",
+    "example": ""
+  },
+  {
+    "id": 203,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "eighteen",
+    "german": "achtzehn (18)",
+    "example": ""
+  },
+  {
+    "id": 204,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "nineteen",
+    "german": "neunzehn (19)",
+    "example": ""
+  },
+  {
+    "id": 205,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "twenty",
+    "german": "zwanzig (20)",
+    "example": ""
+  },
+  {
+    "id": 206,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "twenty-one",
+    "german": "einundzwanzig (21)",
+    "example": ""
+  },
+  {
+    "id": 207,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "twenty-two",
+    "german": "zweiundzwanzig (22)",
+    "example": ""
+  },
+  {
+    "id": 208,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "thirty",
+    "german": "dreißig (30)",
+    "example": ""
+  },
+  {
+    "id": 209,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "thirty-one",
+    "german": "einunddreißig (31)",
+    "example": ""
+  },
+  {
+    "id": 210,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "thirty-two",
+    "german": "zweiunddreißig (32)",
+    "example": ""
+  },
+  {
+    "id": 211,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "they aren't ... (= they are not)",
+    "german": "sie sind nicht ...; sie sind keine ...",
+    "example": "They aren't in the park. They aren't friends."
+  },
+  {
+    "id": 212,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "Ms Borowski",
+    "german": "Frau Borowski",
+    "example": ""
+  },
+  {
+    "id": 213,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "too",
+    "german": "auch",
+    "example": "I'm from Bamberg. – I'm from Bamberg too."
+  },
+  {
+    "id": 214,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "they're (= they are)",
+    "german": "sie sind",
+    "example": ""
+  },
+  {
+    "id": 215,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "guys (pl)",
+    "german": "Leute (als Anrede verwendet)",
+    "example": ""
+  },
+  {
+    "id": 216,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 16,
+    "english": "language",
+    "german": "Sprache",
+    "example": ""
+  },
+  {
+    "id": 217,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 17,
+    "english": "happy",
+    "german": "glücklich, froh",
+    "example": "She's happy. He isn't happy."
+  },
+  {
+    "id": 218,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 17,
+    "english": "quiz, pl quizzes",
+    "german": "Quiz",
+    "example": "one quiz – two quizzes"
+  },
+  {
+    "id": 219,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 17,
+    "english": "game",
+    "german": "Spiel",
+    "example": ""
+  },
+  {
+    "id": 220,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 17,
+    "english": "right",
+    "german": "richtig",
+    "example": ""
+  },
+  {
+    "id": 221,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 17,
+    "english": "or",
+    "german": "oder; sonst",
+    "example": "Are you a boy or a girl?"
+  },
+  {
+    "id": 222,
+    "unit": "Unit 1",
+    "section": "Introduction 1",
+    "page": 17,
+    "english": "wrong",
+    "german": "falsch",
+    "example": "right ◄► wrong"
+  },
+  {
+    "id": 223,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "pullover",
+    "german": "Pullover",
+    "example": ""
+  },
+  {
+    "id": 224,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "blazer",
+    "german": "Blazer (Jackett, oft Teil der Schuluniform)",
+    "example": ""
+  },
+  {
+    "id": 225,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "shirt",
+    "german": "Hemd",
+    "example": ""
+  },
+  {
+    "id": 226,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "shoe",
+    "german": "Schuh",
+    "example": ""
+  },
+  {
+    "id": 227,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "skirt",
+    "german": "Rock",
+    "example": ""
+  },
+  {
+    "id": 228,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "tie",
+    "german": "Krawatte",
+    "example": ""
+  },
+  {
+    "id": 229,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "trousers (pl)",
+    "german": "Hose",
+    "example": "Are your trousers new? They're cool!"
+  },
+  {
+    "id": 230,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "shop",
+    "german": "Laden, Geschäft",
+    "example": ""
+  },
+  {
+    "id": 231,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "magazine",
+    "german": "Zeitschrift",
+    "example": ""
+  },
+  {
+    "id": 232,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "7 to 12",
+    "german": "(von) 7 bis 12",
+    "example": ""
+  },
+  {
+    "id": 233,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "The shirts are £6.",
+    "german": "Die Hemden kosten 6 Pfund.",
+    "example": ""
+  },
+  {
+    "id": 234,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "The shirt is £2.",
+    "german": "Das Hemd kostet 2 Pfund.",
+    "example": ""
+  },
+  {
+    "id": 235,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "pound (£)",
+    "german": "Pfund (britische Währung)",
+    "example": "you write: £5 – you say: five pounds"
+  },
+  {
+    "id": 236,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "(to) buy",
+    "german": "kaufen",
+    "example": ""
+  },
+  {
+    "id": 237,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "here",
+    "german": "hier; hierher",
+    "example": "Linda, where are you? – I'm here."
+  },
+  {
+    "id": 238,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "clothes (pl)",
+    "german": "Kleidung, Kleidungsstücke",
+    "example": "All her clothes are black."
+  },
+  {
+    "id": 239,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 18,
+    "english": "all",
+    "german": "alle(s)",
+    "example": ""
+  },
+  {
+    "id": 240,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 19,
+    "english": "(to) speak",
+    "german": "sprechen",
+    "example": ""
+  },
+  {
+    "id": 241,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 19,
+    "english": "with",
+    "german": "mit",
+    "example": ""
+  },
+  {
+    "id": 242,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 19,
+    "english": "(to) write",
+    "german": "schreiben",
+    "example": ""
+  },
+  {
+    "id": 243,
+    "unit": "Unit 1",
+    "section": "Skills training",
+    "page": 19,
+    "english": "jeans (pl)",
+    "german": "Jeans",
+    "example": ""
+  },
+  {
+    "id": 244,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 20,
+    "english": "lots (of)",
+    "german": "viel/e",
+    "example": "There are lots of books on the desk."
+  },
+  {
+    "id": 245,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 20,
+    "english": "question",
+    "german": "Frage",
+    "example": ""
+  },
+  {
+    "id": 246,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 20,
+    "english": "short",
+    "german": "kurz",
+    "example": ""
+  },
+  {
+    "id": 247,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 20,
+    "english": "answer (to)",
+    "german": "Antwort (auf)",
+    "example": "verb: (to) answer = (be)antworten"
+  },
+  {
+    "id": 248,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 21,
+    "english": "ready",
+    "german": "fertig, bereit",
+    "example": ""
+  },
+  {
+    "id": 249,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 21,
+    "english": "there",
+    "german": "da, dort; dahin, dorthin",
+    "example": "This is my favourite shop. I buy my clothes there."
+  },
+  {
+    "id": 250,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 21,
+    "english": "together",
+    "german": "zusammen",
+    "example": ""
+  },
+  {
+    "id": 251,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 21,
+    "english": "football club (FC)",
+    "german": "Fußballverein",
+    "example": ""
+  },
+  {
+    "id": 252,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 21,
+    "english": "football",
+    "german": "Fußball",
+    "example": ""
+  },
+  {
+    "id": 253,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 22,
+    "english": "(to) wear",
+    "german": "tragen, anhaben (Kleidung)",
+    "example": "At English schools students wear uniforms."
+  },
+  {
+    "id": 254,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 22,
+    "english": "(to) listen (to)",
+    "german": "(sich etwas) anhören; zuhören",
+    "example": "Listen to Ellie."
+  },
+  {
+    "id": 255,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 22,
+    "english": "(to) stand up",
+    "german": "aufstehen",
+    "example": ""
+  },
+  {
+    "id": 256,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 22,
+    "english": "(to) open",
+    "german": "öffnen; aufschlagen (Buch)",
+    "example": "Open your books."
+  },
+  {
+    "id": 257,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 22,
+    "english": "(to) close",
+    "german": "schließen, zumachen",
+    "example": "(to) close ◄► (to) open"
+  },
+  {
+    "id": 258,
+    "unit": "Unit 1",
+    "section": "Introduction 2",
+    "page": 22,
+    "english": "(to) look at sth.",
+    "german": "sich etwas anschauen",
+    "example": ""
+  },
+  {
+    "id": 259,
+    "unit": "Unit 1",
+    "section": "Study skills",
+    "page": 23,
+    "english": "(to) learn",
+    "german": "lernen",
+    "example": ""
+  },
+  {
+    "id": 260,
+    "unit": "Unit 1",
+    "section": "Study skills",
+    "page": 23,
+    "english": "word web",
+    "german": "Wortnetz",
+    "example": ""
+  },
+  {
+    "id": 261,
+    "unit": "Unit 1",
+    "section": "Study skills",
+    "page": 23,
+    "english": "web",
+    "german": "Netz",
+    "example": ""
+  },
+  {
+    "id": 262,
+    "unit": "Unit 1",
+    "section": "Study skills",
+    "page": 23,
+    "english": "people (pl)",
+    "german": "Leute, Menschen",
+    "example": "five people"
+  },
+  {
+    "id": 263,
+    "unit": "Unit 1",
+    "section": "Study skills",
+    "page": 23,
+    "english": "sentence",
+    "german": "Satz",
+    "example": ""
+  },
+  {
+    "id": 264,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "after the first day",
+    "german": "nach dem ersten Tag",
+    "example": ""
+  },
+  {
+    "id": 265,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "idea",
+    "german": "Idee",
+    "example": ""
+  },
+  {
+    "id": 266,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "there's (= there is)",
+    "german": "es ist ... / es gibt ...",
+    "example": "There's a rubber in the pencil case."
+  },
+  {
+    "id": 267,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "there are",
+    "german": "es sind ... / es gibt ...",
+    "example": "And there are two pencils."
+  },
+  {
+    "id": 268,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "group",
+    "german": "Gruppe",
+    "example": ""
+  },
+  {
+    "id": 269,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "(to) be good at sth.",
+    "german": "etwas gut können; gut in etwas sein",
+    "example": ""
+  },
+  {
+    "id": 270,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "his favourite game",
+    "german": "sein Lieblingsspiel",
+    "example": ""
+  },
+  {
+    "id": 271,
+    "unit": "Unit 1",
+    "section": "Text 2",
+    "page": 24,
+    "english": "player",
+    "german": "Spieler/in",
+    "example": ""
+  }
+]

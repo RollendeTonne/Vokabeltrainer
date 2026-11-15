@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vokabeltrainer – Go Ahead 5</title>
+<style>
+  :root {
+    --bg: #f4f6fb; --card: #fff; --ink: #1d2433; --muted: #6b7489;
+    --accent: #2f6fde; --accent-soft: #e3ecfc; --ok: #1f9d55; --ok-soft: #e1f5ea;
+    --bad: #d64545; --bad-soft: #fbe5e5; --line: #dfe3ec; --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151c; --card: #1c212c; --ink: #e8ebf2; --muted: #9aa3b5;
+      --accent: #6b9cff; --accent-soft: #24304a; --ok: #4cc38a; --ok-soft: #1c3329;
+      --bad: #ff7676; --bad-soft: #3a2224; --line: #2d3342;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header { padding: 18px 16px 6px; max-width: 760px; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 1.4rem; }
+  header p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 40px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; margin-top: 14px; }
+  .panel h2 { margin: 0 0 10px; font-size: 1rem; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .unit-block { margin-bottom: 10px; }
+  .unit-block > label { font-weight: 600; display: inline-flex; gap: 6px; align-items: center; margin-bottom: 6px; }
+  .chip {
+    border: 1px solid var(--line); background: transparent; color: var(--ink);
+    padding: 6px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: .9rem;
+  }
+  .chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .seg button { border: 0; background: transparent; color: var(--ink); padding: 8px 12px; font: inherit; cursor: pointer; }
+  .seg button.on { background: var(--accent); color: #fff; }
+  .btn {
+    border: 0; background: var(--accent); color: #fff; padding: 11px 18px; border-radius: 10px;
+    font: inherit; font-weight: 600; cursor: pointer;
+  }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .btn.ok { background: var(--ok); } .btn.bad { background: var(--bad); }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .card {
+    min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 24px 12px; cursor: pointer; user-select: none;
+  }
+  .card .prompt { font-size: 1.7rem; font-weight: 700; }
+  .card .answer { font-size: 1.3rem; margin-top: 14px; color: var(--accent); }
+  .card .example { margin-top: 10px; color: var(--muted); font-style: italic; }
+  .card .hint { margin-top: 18px; color: var(--muted); font-size: .85rem; }
+  .meta { display: flex; justify-content: space-between; color: var(--muted); font-size: .85rem; }
+  .progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 8px 0 4px; }
+  .progress > div { height: 100%; background: var(--accent); width: 0; transition: width .2s; }
+  input[type=text] {
+    width: 100%; font: inherit; font-size: 1.2rem; padding: 12px; border-radius: 10px;
+    border: 2px solid var(--line); background: var(--bg); color: var(--ink);
+  }
+  input[type=text]:focus { outline: none; border-color: var(--accent); }
+  .feedback { margin-top: 12px; padding: 12px; border-radius: 10px; }
+  .feedback.ok { background: var(--ok-soft); color: var(--ok); }
+  .feedback.bad { background: var(--bad-soft); color: var(--bad); }
+  .feedback .sol { color: var(--ink); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: .8rem; text-transform: uppercase; }
+  td.ex { color: var(--muted); font-size: .85rem; }
+  .sec-head td { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  .stat { font-weight: 700; font-size: 1.6rem; }
+  .hidden { display: none !important; }
+  label.check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Vokabeltrainer</h1>
+  <p>Go Ahead · Realschule Bayern · 5. Jahrgangsstufe</p>
+</header>
+<main>
+  <!-- Auswahl -->
+  <section id="setup">
+    <div class="panel">
+      <h2>1. Was willst du üben?</h2>
+      <div id="units"></div>
+      <div class="muted" id="count"></div>
+    </div>
+    <div class="panel">
+      <h2>2. Wie willst du üben?</h2>
+      <div class="row" style="margin-bottom:10px">
+        <div class="seg" id="mode">
+          <button data-v="cards" class="on">Karteikarten</button>
+          <button data-v="type">Schreiben</button>
+          <button data-v="list">Liste</button>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom:10px" id="dirRow">
+        <div class="seg" id="dir">
+          <button data-v="en" class="on">Englisch → Deutsch</button>
+          <button data-v="de">Deutsch → Englisch</button>
+        </div>
+      </div>
+      <div class="row" id="optRow">
+        <label class="check"><input type="checkbox" id="onlyHard"> nur Wörter, die ich noch nicht kann</label>
+        <label class="check"><input type="checkbox" id="shuffle" checked> gemischt</label>
+      </div>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <button class="btn" id="start">Los geht's!</button>
+      <button class="btn ghost" id="reset">Fortschritt zurücksetzen</button>
+    </div>
+  </section>
+
+  <!-- Üben -->
+  <section id="practice" class="hidden">
+    <div class="panel">
+      <div class="meta"><span id="pos"></span><span id="score"></span></div>
+      <div class="progress"><div id="bar"></div></div>
+
+      <div id="cardView">
+        <div class="card" id="card">
+          <div class="prompt" id="cPrompt"></div>
+          <div class="answer hidden" id="cAnswer"></div>
+          <div class="example hidden" id="cExample"></div>
+          <div class="hint" id="cHint">Tippen zum Umdrehen</div>
+        </div>
+        <div class="row" style="justify-content:center">
+          <button class="btn bad" id="cNo" disabled>Noch nicht</button>
+          <button class="btn ok" id="cYes" disabled>Gewusst</button>
+        </div>
+      </div>
+
+      <div id="typeView" class="hidden">
+        <div class="card" style="cursor:default;min-height:140px">
+          <div class="prompt" id="tPrompt"></div>
+          <div class="example" id="tExample"></div>
+        </div>
+        <input type="text" id="tInput" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Antwort eingeben …">
+        <div id="tFeedback" class="feedback hidden"></div>
+        <div class="row" style="margin-top:12px">
+          <button class="btn" id="tCheck">Prüfen</button>
+          <button class="btn ghost hidden" id="tOverride">Ich hatte recht</button>
+          <button class="btn hidden" id="tNext">Weiter</button>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <button class="btn ghost" id="stop">Beenden</button>
+    </div>
+  </section>
+
+  <!-- Ergebnis -->
+  <section id="result" class="hidden">
+    <div class="panel" style="text-align:center">
+      <h2>Geschafft!</h2>
+      <div class="stat" id="rStat"></div>
+      <p class="muted" id="rText"></p>
+      <div id="rWrong"></div>
+      <div class="row" style="justify-content:center;margin-top:12px">
+        <button class="btn" id="rAgain">Falsche nochmal üben</button>
+        <button class="btn ghost" id="rBack">Zur Auswahl</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liste -->
+  <section id="listView" class="hidden">
+    <div class="panel">
+      <table><thead><tr><th>Englisch</th><th>Deutsch</th><th>Beispiel / Hinweis</th></tr></thead>
+      <tbody id="listBody"></tbody></table>
+    </div>
+    <div class="row" style="margin-top:14px"><button class="btn ghost" id="listBack">Zur Auswahl</button></div>
+  </section>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const STORE = "goahead5-progress";
+let VOCAB = [];
+let selected = new Set();          // "unit||section"
+let mode = "cards", dir = "en";
+let queue = [], idx = 0, right = 0, wrong = [], answered = false;
+
+// ---------- Fortschritt (localStorage, fehlertolerant) ----------
+function loadProgress() { try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch { return {}; } }
+function saveProgress(p) { try { localStorage.setItem(STORE, JSON.stringify(p)); } catch {} }
+let progress = loadProgress();     // id -> Anzahl richtig in Folge
+const known = v => (progress[v.id] || 0) >= 2;
+function mark(v, ok) {
+  progress[v.id] = ok ? (progress[v.id] || 0) + 1 : 0;
+  saveProgress(progress);
+}
+
+// ---------- Auswahl ----------
+const key = v => v.unit + "||" + v.section;
+function buildUnits() {
+  const units = {};
+  VOCAB.forEach(v => { (units[v.unit] ||= new Set()).add(v.section); });
+  const box = $("units"); box.innerHTML = "";
+  Object.entries(units).forEach(([u, secs]) => {
+    const block = document.createElement("div"); block.className = "unit-block";
+    const lab = document.createElement("label");
+    const cb = document.createElement("input"); cb.type = "checkbox";
+    lab.append(cb, document.createTextNode(u));
+    const row = document.createElement("div"); row.className = "row";
+    const chips = [];
+    secs.forEach(s => {
+      const k = u + "||" + s;
+      const n = VOCAB.filter(v => key(v) === k).length;
+      const c = document.createElement("button"); c.className = "chip"; c.textContent = `${s} (${n})`;
+      c.onclick = () => { selected.has(k) ? selected.delete(k) : selected.add(k); sync(); };
+      chips.push([k, c]); row.append(c);
+    });
+    cb.onchange = () => { chips.forEach(([k]) => cb.checked ? selected.add(k) : selected.delete(k)); sync(); };
+    block.append(lab, row); box.append(block);
+    block._sync = () => {
+      chips.forEach(([k, c]) => c.classList.toggle("on", selected.has(k)));
+      const on = chips.filter(([k]) => selected.has(k)).length;
+      cb.checked = on === chips.length; cb.indeterminate = on > 0 && on < chips.length;
+    };
+  });
+}
+function pool() {
+  let p = VOCAB.filter(v => selected.has(key(v)));
+  if ($("onlyHard").checked && mode !== "list") p = p.filter(v => !known(v));
+  return p;
+}
+function sync() {
+  document.querySelectorAll(".unit-block").forEach(b => b._sync());
+  const all = VOCAB.filter(v => selected.has(key(v)));
+  const k = all.filter(known).length;
+  $("count").textContent = all.length
+    ? `${all.length} Wörter ausgewählt · ${k} davon kannst du schon`
+    : "Wähle mindestens einen Abschnitt aus.";
+  $("start").disabled = pool().length === 0;
+  $("dirRow").classList.toggle("hidden", mode === "list");
+  $("optRow").classList.toggle("hidden", mode === "list");
+}
+function segment(id, set) {
+  $(id).querySelectorAll("button").forEach(b => b.onclick = () => {
+    $(id).querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+    set(b.dataset.v); sync();
+  });
+}
+
+// ---------- Antwort prüfen ----------
+function norm(s) {
+  return s.toLowerCase()
+    .replace(/[’`´]/g, "'").replace(/…|\.\.\./g, " ")
+    .replace(/[.!?¿,:"„“]/g, " ").replace(/\s+/g, " ").trim();
+}
+function variants(text) {
+  // Alternativen trennen und Klammern einmal weglassen, einmal mitnehmen
+  const out = new Set();
+  text.split(/[;\/,]/).forEach(part => {
+    part = part.replace(/\(=.*?\)/g, "").replace(/\bpl\b.*$/, "");
+    const a = norm(part.replace(/\(.*?\)/g, ""));
+    const b = norm(part.replace(/-\)/g, "").replace(/[()]/g, ""));
+    [a, b].forEach(x => { if (x) out.add(x); });
+  });
+  out.add(norm(text.replace(/\(.*?\)/g, "")));
+  out.add(norm(text.replace(/[()]/g, "")));
+  out.delete("");
+  return out;
+}
+function isCorrect(v, input) {
+  const target = dir === "en" ? v.german : v.english;
+  const ans = norm(input);
+  if (!ans) return false;
+  const vs = variants(target);
+  if (vs.has(ans)) return true;
+  if (dir === "de" && vs.has(ans.replace(/^to /, ""))) return true;
+  return false;
+}
+
+// ---------- Ablauf ----------
+function show(section) {
+  ["setup", "practice", "result", "listView"].forEach(s => $(s).classList.toggle("hidden", s !== section));
+  window.scrollTo(0, 0);
+}
+function start(list) {
+  queue = list.slice();
+  if ($("shuffle").checked) queue.sort(() => Math.random() - .5);
+  idx = 0; right = 0; wrong = [];
+  $("cardView").classList.toggle("hidden", mode !== "cards");
+  $("typeView").classList.toggle("hidden", mode !== "type");
+  show("practice"); next();
+}
+function header() {
+  $("pos").textContent = `${Math.min(idx + 1, queue.length)} / ${queue.length}`;
+  $("score").textContent = `✓ ${right}  ✗ ${wrong.length}`;
+  $("bar").style.width = (idx / queue.length * 100) + "%";
+}
+function next() {
+  if (idx >= queue.length) return finish();
+  header(); answered = false;
+  const v = queue[idx];
+  const prompt = dir === "en" ? v.english : v.german;
+  if (mode === "cards") {
+    $("cPrompt").textContent = prompt;
+    $("cAnswer").textContent = dir === "en" ? v.german : v.english;
+    $("cExample").textContent = v.example;
+    ["cAnswer", "cExample"].forEach(i => $(i).classList.add("hidden"));
+    $("cHint").classList.remove("hidden");
+    $("cYes").disabled = $("cNo").disabled = true;
+  } else {
+    $("tPrompt").textContent = prompt;
+    $("tExample").textContent = dir === "en" && v.example ? v.example : "";
+    $("tInput").value = ""; $("tInput").disabled = false; $("tInput").focus();
+    $("tFeedback").classList.add("hidden");
+    $("tCheck").classList.remove("hidden");
+    $("tNext").classList.add("hidden"); $("tOverride").classList.add("hidden");
+  }
+}
+function record(ok) {
+  const v = queue[idx];
+  mark(v, ok);
+  if (ok) right++; else wrong.push(v);
+}
+function flip() {
+  if (answered) return;
+  answered = true;
+  $("cAnswer").classList.remove("hidden");
+  if (queue[idx].example) $("cExample").classList.remove("hidden");
+  $("cHint").classList.add("hidden");
+  $("cYes").disabled = $("cNo").disabled = false;
+}
+function cardAnswer(ok) { if (!answered) return; record(ok); idx++; next(); }
+function check() {
+  if (answered) return;
+  answered = true;
+  const v = queue[idx];
+  const ok = isCorrect(v, $("tInput").value);
+  record(ok);
+  const fb = $("tFeedback");
+  const sol = dir === "en" ? v.german : v.english;
+  fb.className = "feedback " + (ok ? "ok" : "bad");
+  fb.innerHTML = "";
+  fb.append(document.createTextNode(ok ? "Richtig!" : "Leider falsch."));
+  const s = document.createElement("div"); s.className = "sol";
+  s.textContent = "Lösung: " + sol + (v.example ? "  —  " + v.example : "");
+  fb.append(s);
+  $("tInput").disabled = true;
+  $("tCheck").classList.add("hidden");
+  $("tNext").classList.remove("hidden");
+  $("tOverride").classList.toggle("hidden", ok);
+  $("tNext").focus();
+}
+function override() {
+  const v = queue[idx];
+  wrong = wrong.filter(w => w !== v); right++;
+  mark(v, true);
+  $("tFeedback").className = "feedback ok";
+  $("tFeedback").firstChild.textContent = "Okay, als richtig gezählt.";
+  $("tOverride").classList.add("hidden"); header();
+}
+function finish() {
+  const n = queue.length;
+  $("rStat").textContent = `${right} von ${n} richtig`;
+  $("rText").textContent = wrong.length === 0 ? "Super, alles gewusst!" :
+    right / n >= .8 ? "Sehr gut! Nur noch ein paar Wörter üben." : "Weiter so – übe die falschen Wörter gleich nochmal.";
+  const box = $("rWrong"); box.innerHTML = "";
+  if (wrong.length) {
+    const t = document.createElement("table");
+    wrong.forEach(v => {
+      const tr = t.insertRow();
+      tr.insertCell().textContent = v.english;
+      tr.insertCell().textContent = v.german;
+    });
+    box.append(t);
+  }
+  $("rAgain").classList.toggle("hidden", wrong.length === 0);
+  show("result");
+}
+function showList() {
+  const body = $("listBody"); body.innerHTML = "";
+  let last = "";
+  VOCAB.filter(v => selected.has(key(v))).forEach(v => {
+    const k = key(v);
+    if (k !== last) {
+      const h = body.insertRow(); h.className = "sec-head";
+      const c = h.insertCell(); c.colSpan = 3;
+      c.textContent = v.unit === v.section ? v.unit : `${v.unit} · ${v.section}`;
+      last = k;
+    }
+    const tr = body.insertRow();
+    tr.insertCell().textContent = (known(v) ? "✓ " : "") + v.english;
+    tr.insertCell().textContent = v.german;
+    const e = tr.insertCell(); e.className = "ex"; e.textContent = v.example;
+  });
+  show("listView");
+}
+
+// ---------- Events ----------
+segment("mode", v => mode = v);
+segment("dir", v => dir = v);
+$("onlyHard").onchange = sync;
+$("start").onclick = () => mode === "list" ? showList() : start(pool());
+$("reset").onclick = () => {
+  if (confirmReset()) { progress = {}; saveProgress(progress); sync(); }
+};
+function confirmReset() {
+  const b = $("reset");
+  if (b.dataset.armed) { delete b.dataset.armed; b.textContent = "Fortschritt zurücksetzen"; return true; }
+  b.dataset.armed = "1"; b.textContent = "Wirklich zurücksetzen? Nochmal klicken";
+  setTimeout(() => { delete b.dataset.armed; b.textContent = "Fortschritt zurücksetzen"; }, 4000);
+  return false;
+}
+$("card").onclick = flip;
+$("cYes").onclick = () => cardAnswer(true);
+$("cNo").onclick = () => cardAnswer(false);
+$("tCheck").onclick = check;
+$("tNext").onclick = () => { idx++; next(); };
+$("tOverride").onclick = override;
+$("tInput").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); check(); } });
+document.addEventListener("keydown", e => {
+  if ($("practice").classList.contains("hidden")) return;
+  if (mode === "cards") {
+    if (e.key === " ") { e.preventDefault(); flip(); }
+    if (answered && (e.key === "ArrowRight" || e.key === "j")) cardAnswer(true);
+    if (answered && (e.key === "ArrowLeft" || e.key === "n")) cardAnswer(false);
+  }
+});
+$("stop").onclick = () => { show("setup"); sync(); };
+$("rAgain").onclick = () => start(wrong);
+$("rBack").onclick = () => { show("setup"); sync(); };
+$("listBack").onclick = () => { show("setup"); sync(); };
+
+// ---------- Daten laden ----------
+fetch("vokabeln.json")
+  .then(r => r.json())
+  .then(data => {
+    VOCAB = data;
+    buildUnits();
+    // Standard: letzte Unit komplett auswählen
+    const lastUnit = VOCAB[VOCAB.length - 1].unit;
+    VOCAB.filter(v => v.unit === lastUnit).forEach(v => selected.add(key(v)));
+    sync();
+  })
+  .catch(() => { $("count").textContent = "Vokabeln konnten nicht geladen werden."; });
+</script>
+</body>
+</html>
